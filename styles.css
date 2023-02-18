@@ -7,7 +7,7 @@ body {
 aside {
     flex-basis: 15%;
     background-color: aqua;
-    margin: o;
+    margin: 0;
     padding: 1vmin;
 }
 
@@ -27,6 +27,7 @@ header {
 
 .content {
     background-color: bisque;
+    padding-bottom: 10vmin;
 }
 
 .tabs {
@@ -63,6 +64,29 @@ li {
     margin-left: 70vmin;
 }
 
+article {
+    padding: 5vmin;
+}
+
+.article-header {
+    display: flex;
+    background-color: cornflowerblue;
+}
+
+.article-section {
+    display: flex;
+    background-color: aquamarine;
+    border-bottom: 1px solid black;
+    border-bottom-width: 90%;
+}
+
+.article-and-links {
+    display: flex;
+}
+
+.article-links {
+    padding: 5vmin;
+}
 
 .headshot {
     width: 10vmin;
@@ -74,5 +98,9 @@ li {
     margin-right: 5vmin;
 }
 
+button {
+    margin: 3vmin;
+    padding: 2vmin;
+}
 
 
