@@ -134,16 +134,20 @@ article {
     padding: 5vmin;
 }
 
-.article-header {
-    display: flex;
+.table-header {
+    /* display: flex; */
     background-color: cornflowerblue;
 }
 
-.article-section {
-    display: flex;
+.table-header > h2 {
+    margin-left: 10vw;
+}
+
+.table-section {
+    /* display: flex; */
     background-color: aquamarine;
-    border-bottom: 1px solid black;
-    border-bottom-width: 90%;
+    /* border-bottom: 1px solid black;
+    border-bottom-width: 90%; */
 }
 
 .article-and-links {
