@@ -9,21 +9,21 @@
     <aside>
         <img class="headshot" src="assets/colin-robinson-headshot.jpeg">
         <h2>Colin Robinson</h2>
-        <menu>Main
+        <menu>MAIN
             <li>Home</li>
             <li>Jobs</li>
             <li>Resumes</li>
             <li>Tasks</li>
             <li>Calendar</li>
         </menu>
-        <menu>Admin
+        <menu>ADMIN
             <li>Users</li>
             <li>Locations</li>
             <li>Workflows</li>
             <li>Job Boards</li>
             <li>Social</li>
         </menu>
-        <menu>Categories<br>
+        <menu>CATEGORIES<br>
             <input type="checkbox" id="administrative">
             <label for="administrative">Administrative</label><br>
             <input type="checkbox" id="design">
@@ -43,37 +43,48 @@
             <button>Apps</button>
         </nav>
         <header>
-            <h1>Energy Vampire Statistics</h1>
-            <p>Staten Island, NY <span>+ Preview this post</span></p>
-            <button>Open</button>
-            <button>Bookmark Icon</button>
-            <button>Edit Icon</button>
-            <button>Trashcan Icon</button>
-            <menu>
-                <li>Summary</li>
-                <li>Applicants</li>
-                <li>Job Board</li>
-                <li>Interviews</li>
-                <li>Activity</li>
-                <li>Broadcast</li>
-                <li>Notifications</li>
+            <div class="headline">
+                <div>
+                    <h1>Energy Vampire Statistics</h1>
+                    <p>Staten Island, NY <span>+ Preview this post</span></p>
+                </div>
+                <div class="buttons-container">
+                    <button>Open</button>
+                    <button>Bookmark Icon</button>
+                    <button>Edit Icon</button>
+                    <button>Trashcan Icon</button>
+                </div>
+            </div>
+            <menu class="tabs">
+                <li class="tab">Summary</li>
+                <li class="tab">Applicants</li>
+                <li class="tab">Applicants</li>
+                <li class="tab">Job Board</li>
+                <li class="tab">Interviews</li>
+                <li class="tab">Activity</li>
+                <li class="tab">Broadcast</li>
+                <li class="tab">Notifications</li>
             </menu>
         </header>
         <section class="content">
-            <div class="graph">
+            <div class="graphs">
                 <div class="pie-chart">3,154 Joules</div>
                 <div class="pie-chart">1,546 People</div>
                 <div class="pie-chart">912 Targets</div>
                 <img class="bar-graph" src="assets/bar_graph.png">
             </div>
-            <button>Totals - Out of 5,231 views</button>
-            <button>Applicants/Day</button>
-            <button>Collapse Icon</button>
+            <div>
+                <div class="buttons-container">
+                    <button>Totals - Out of 5,231 views</button>
+                    <button>Applicants/Day</button>
+                </div>
+                <button class="collapse-button">Collapse Icon</button>
+            </div>
             <article>
                 <div class="article-header">
                     <h2>Job Description</h2>
                     <button>Pencil Icon - Edit</button>
-                </header>
+                </div>
                 <div class="article-section">
                     <h3>Position Title</h3>
                     <p>Customer Service Representative</p>

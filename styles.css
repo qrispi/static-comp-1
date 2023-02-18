@@ -15,11 +15,53 @@ main {
     flex-basis: 85%;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline {
+    display: flex;
+    justify-content: space-between;
+}
+
 .content {
     background-color: bisque;
 }
 
+.tabs {
+    list-style: none;
+    display: flex;
+}
 
+li {
+    list-style: none;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab {
+    display: block;
+    float: left;
+    margin: 3vmin;
+}
+
+.graphs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pie-chart {
+    margin-top: 10vmin;
+    margin-left: 15vmin;
+}
+
+.collapse-button {
+    margin-left: 70vmin;
+}
 
 
 .headshot {
@@ -29,6 +71,7 @@ main {
 
 .bar-graph {
     width: 30vmin;
+    margin-right: 5vmin;
 }
 
 
