@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    flex-basis: 15%;
+    background-color: aqua;
+    margin: o;
+    padding: 1vmin;
+}
+
+main {
+    flex-basis: 85%;
+}
+
+.content {
+    background-color: bisque;
+}
+
+
+
+
+.headshot {
+    width: 10vmin;
+    border-radius: 100%;
+}
+
+.bar-graph {
+    width: 30vmin;
+}
+
+
+
