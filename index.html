@@ -7,23 +7,25 @@
 </head>
 <body>
     <aside>
-        <img class="headshot" src="assets/colin-robinson-headshot.jpeg">
-        <h2>Colin Robinson</h2>
-        <menu>MAIN
+        <div class="profile">
+            <img class="headshot" src="assets/colin-robinson-headshot.jpeg">
+            <h2>Colin Robinson</h2>
+        </div>
+        <menu class="aside-menu">MAIN
             <li>Home</li>
             <li>Jobs</li>
             <li>Resumes</li>
             <li>Tasks</li>
             <li>Calendar</li>
         </menu>
-        <menu>ADMIN
+        <menu class="aside-menu">ADMIN
             <li>Users</li>
             <li>Locations</li>
             <li>Workflows</li>
             <li>Job Boards</li>
             <li>Social</li>
         </menu>
-        <menu>CATEGORIES<br>
+        <menu class="aside-menu">CATEGORIES<br>
             <input type="checkbox" id="administrative">
             <label for="administrative">Administrative</label><br>
             <input type="checkbox" id="design">
@@ -37,22 +39,23 @@
     <main>
         <nav>
             <button>Open Menu</button>
-            <input type="search" placeholder="Search for a job, task or resume">
+            <input type="search" placeholder="Search for a job, task or resume" class="search-bar">
             <button>Add Friend</button>
             <button>Calendar</button>
             <button>Apps</button>
         </nav>
         <header>
             <div class="headline">
-                <div>
+                <div class="title">
                     <h1>Energy Vampire Statistics</h1>
-                    <p>Staten Island, NY <span>+ Preview this post</span></p>
+                    <p>Staten Island, NY <span class="preview">+ Preview this post</span></p>
                 </div>
                 <div class="buttons-container">
-                    <button>Open</button>
-                    <button>Bookmark Icon</button>
-                    <button>Edit Icon</button>
-                    <button>Trashcan Icon</button>
+                    <button class="round-icon">Open</button>
+                    <button class="round-icon">Bookmark Icon</button>
+                    <button class="round-icon">Bookmark Icon</button>
+                    <button class="round-icon">Edit Icon</button>
+                    <button class="round-icon">Trashcan Icon</button>
                 </div>
             </div>
             <menu class="tabs">
@@ -112,7 +115,7 @@
                     </div>
                     <div class="article-section">
                         <h3>Hiring Lead</h3>
-                        <p><img class="headshot" src="assets/guillermo_headshot.webp">Guillermo de lz Cruz</p>
+                        <p><img class="headshot" src="assets/guillermo_headshot.png">Guillermo de lz Cruz</p>
                     </div>
                     <div class="article-section">
                         <h3>Approved Salary</h3>
@@ -120,9 +123,9 @@
                     </div>
                 </article>
                 <section class="article-links">
-                    <button>Icon - Post to Facebook</button><br>
-                    <button>Icon - Tweet this Job</button><br>
-                    <button>Icon - Post to Linkedin</button><br>
+                    <button class="social-button">Icon - Post to Facebook</button><br>
+                    <button class="social-button">Icon - Tweet this Job</button><br>
+                    <button class="social-button">Icon - Post to Linkedin</button><br>
                     <div>
                         <h4>Icon - Link to this Job</h4>
                         <p>A psychic vampire (or energy vampire) is a creature in folklore said to feed off the "life force" of other living creatures.</p>
