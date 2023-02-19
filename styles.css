@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     line-height: 0;
+    cursor: pointer;
 }
 
 .icon-box {
@@ -31,12 +32,26 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}
+
+button {
+    font-family: 'Work Sans', sans-serif;
+    cursor: pointer;
+}
+
+/* ASIDE CONTENT AREAS */
 aside {
     width: 15vw;
     background-color: #274c77;
     color: #e7ecef;
     margin: 0;
-    /* padding: 1vmin; */
 }
 
 .profile {
@@ -50,18 +65,22 @@ aside {
 .aside-menu {
     padding: 2vw 1vw;
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
-    /* border-top: 1px solid black; */
 }
 
 .aside-menu > li {
-    margin: 0.5vw;
+    margin: 2vw 0.5vw;
 }
 
 .aside-menu > input {
-    margin: 0.5vw;
-    /* border: none; */
+    margin: 1.5vw 0.5vw;
 }
 
+.headshot {
+    width: 8vw;
+    border-radius: 100%;
+}
+
+/* NAV BAR */
 nav {
     display: flex;
     justify-content: space-between;
@@ -92,10 +111,7 @@ nav {
     font-family: 'Work Sans', sans-serif;
 }
 
-main {
-    flex-basis: 85vw;
-}
-
+/* HEADER CONTENT */
 header {
     display: flex;
     flex-direction: column;
@@ -110,7 +126,7 @@ header {
 }
 
 .title-box {
-    margin: 2vw 5vw;
+    margin: 2vw 8vw;
 }
 
 .title {
@@ -149,6 +165,20 @@ header {
 
 .preview {
     color: #6096ba;
+}
+
+.tabs {
+    border: none;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 3vw;
+}
+
+.tab {
+    display: block;
+    float: left;
+    margin: 3vmin;
 }
 
 /* GRAPHS */
@@ -205,27 +235,9 @@ header {
     padding-bottom: 10vmin;
 }
 
-.tabs {
-    border: none;
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding-left: 3vw;
-}
-
-li {
-    list-style: none;
-}
-
 .buttons-container {
     display: flex;
     justify-content: space-around;
-}
-
-.tab {
-    display: block;
-    float: left;
-    margin: 3vmin;
 }
 
 .collapse-hr-left {
@@ -244,6 +256,7 @@ li {
 
 .collapse-icon {
     margin: 5vw auto;
+    background-color: #e7ecef;
 }
 
 hr {
@@ -253,10 +266,11 @@ hr {
     background-color: #6096ba;
 }
 
+/* TABLE CONTENT */
 table {
     margin: 2vw;
     width: 60vw;
-    height: 130vh;
+    height: 120vh;
     border-collapse: collapse;
 }
 
@@ -302,9 +316,8 @@ table {
 }
 
 .table-header {
-    /* display: flex; */
     background-color: #6096ba;
-    padding-left: 10vw;
+    color: #e7ecef;
 }
 
 .first-column {
@@ -312,28 +325,48 @@ table {
 }
 
 th {
-    /* width: 20vw; */
     padding-left: 1vw; 
+}
+
+.edit-icon {
+    text-align: left;
+    display: block;
+    margin-left: 1vw;
+    background-color: #a3cef1;
+    width: 4vw;
+    padding: 0.8vw 1.3vw;
+    border-radius: 3px;
 }
 
 td {
-    padding-left: 1vw; 
+    padding-left: 2vw; 
 }
 
 .table-section {
-    /* display: flex; */
     background-color: #e7ecef;
-    /* border-bottom: 1px solid black;
-    border-bottom-width: 90%; */
 }
 
+.mini-headshot {
+    width: 4vw;
+    border-radius: 100%;
+    margin-right: 2vw;
+}
+
+.hiring-lead {
+    display: flex;
+}
+
+/* TABLE SIDEBAR CONTENT */
 .article-and-links {
     display: flex;
 }
 
 .article-links {
     margin-top: 2vw;
-    width: 19vw;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .social-button {
@@ -342,21 +375,21 @@ td {
     margin-bottom: 1vh;
     margin-right: auto;
     margin-left: auto;
+    color: #e7ecef;
+    border-radius: 3px;
+    border: none;
 }
 
-.headshot {
-    width: 8vw;
-    border-radius: 100%;
+.fb {
+    background-color: #4267B2;
 }
 
-.mini-headshot {
-    width: 4vw;
-    border-radius: 100%;
+.twitter {
+    background-color: 	#1DA1F2;
 }
 
-button {
-    font-family: 'Work Sans', sans-serif;
-    /* padding: 2vmin; */
+.linkedin {
+    background-color: #0072b1;
 }
 
 .copy-button {
@@ -367,7 +400,7 @@ button {
     height: 5vh;
     width: 3.2vw;
     margin-left: 2.2vw;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 3px 3px 0;
     /* height: 3vh; */
 }
 
@@ -376,7 +409,6 @@ button {
     padding-left: 1.5vw;
     width: 16vw;
     height: 5vh;
-    border-radius: 5px;
+    border-radius: 3px;
     margin: 0;
-    
 }
