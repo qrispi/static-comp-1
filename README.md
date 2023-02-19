@@ -7,6 +7,7 @@ The goal of this project was to re-create (liberties were given to assets, fonts
 
 ### Preview of my HTML re-creation:
 
+![preview-of-static-comp-1](assets/static-comp-1-preview.gif)
 
 ### Technologies used:
 - NPM installed icons from FlatIcon
