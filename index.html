@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link href="/node_modules/@flaticon/flaticon-uicons/css/all/all.css" rel="stylesheet">
     <title>Static Comp 1</title>
@@ -58,8 +61,8 @@
         </nav>
         <header>
             <div class="headline">
-                <div class="title">
-                    <h1 style="color: black">Energy Vampire Statistics</h1>
+                <div class="title-box">
+                    <h1 class="title">Senior Energy Vampire</h1>
                     <p>Staten Island, NY <span class="preview">+ Preview this post</span></p>
                 </div>
                 <div class="buttons-container">
@@ -90,17 +93,30 @@
         </header>
         <section class="content">
             <div class="graphs">
-                <div class="pie-chart">3,154 Joules</div>
-                <div class="pie-chart">1,546 People</div>
-                <div class="pie-chart">912 Targets</div>
+                <div class="donut-chart">
+                    <img class="donut-1" src="assets/transparent_donut_chart.png">
+                    <span class="donut-title"><span style="font-size: 2.5rem;">9,912</span> kcal</span>
+                </div>
+                <div class="donut-chart">
+                    <img class="donut-2" src="assets/transparent_donut_chart.png">
+                    <span class="donut-title"><span style="font-size: 2.5rem;">42</span> People</span>
+                </div>
+                <div class="donut-chart">
+                    <img class="donut-3" src="assets/transparent_donut_chart.png">
+                    <span class="donut-title"><span style="font-size: 2.5rem;">13</span> Targets</span>
+                </div>
                 <img class="bar-graph" src="assets/bar_graph.png">
             </div>
             <div>
                 <div class="buttons-container">
-                    <button>Totals - Out of 5,231 views</button>
-                    <button>Applicants/Day</button>
+                    <button class="graph-buttons">Totals - Energy Drained this Month</button>
+                    <button class="graph-buttons">kilocalories Drained per Hour</button>
                 </div>
-                <button class="collapse-button">Collapse Icon</button>
+                <div class="round-icon collapse-icon">
+                    <hr class="collapse-hr-left">
+                    <i class="fi fi-sr-angle-up"></i>
+                    <hr class="collapse-hr-right">
+                </div>
             </div>
             <div class="article-and-links">
                 <table>
@@ -110,7 +126,7 @@
                     </tr>
                     <tr class="table-section">
                         <td><h3>Position Title</h3></td>
-                        <td><p>Customer Service Representative</p></td>
+                        <td><p>Senior Energy Vampire</p></td>
                     </tr>
                     <tr class="table-section">
                         <td><h3>Location</h3></td>
@@ -122,7 +138,7 @@
                     </tr>
                     <tr class="table-section">
                         <td><h3>Experience</h3></td>
-                        <td><p>Mid-level</p></td>
+                        <td><p>Senior-level</p></td>
                     </tr>
                     <tr class="table-section">
                         <td><h3>Status</h3></td>
@@ -138,15 +154,15 @@
                     </tr>
                     <tr class="table-section">
                         <td><h3>Approved Salary</h3></td>
-                        <td><p>$58,000</p></td>
+                        <td><p>$313,000</p></td>
                     </tr>
-                    <hr class="table-hr-1">
-                    <hr class="table-hr-2">
-                    <hr class="table-hr-3">
-                    <hr class="table-hr-4">
-                    <hr class="table-hr-5">
-                    <hr class="table-hr-6">
-                    <hr class="table-hr-7">
+                    <hr class="table-hr-1 table-hr">
+                    <hr class="table-hr-2 table-hr">
+                    <hr class="table-hr-3 table-hr">
+                    <hr class="table-hr-4 table-hr">
+                    <hr class="table-hr-5 table-hr">
+                    <hr class="table-hr-6 table-hr">
+                    <hr class="table-hr-7 table-hr">
                 </table>
                 <section class="article-links">
                     <button class="social-button">Icon - Post to Facebook</button>
