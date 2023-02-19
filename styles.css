@@ -5,23 +5,12 @@
 /* Dark Blue - #274c77 */
 /* Dark Grey - #8b8c89 */
 
-/* ICONS */
+/* GLOBAL */
 .fi {
     margin: 0;
     padding: 0;
     line-height: 0;
     cursor: pointer;
-}
-
-.icon-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6vw;
-    width: 6vw;
-    font-size: 2rem;
-    color: #8b8c89;
-    box-shadow: 1px 1px 4px #8b8c89;
 }
 
 body {
@@ -68,7 +57,13 @@ aside {
 }
 
 .aside-menu > li {
-    margin: 2vw 0.5vw;
+    /* margin: 2vw 0.5vw; */
+    padding: 2vh 2vw;
+}
+
+.aside-menu > li:hover {
+    background-color: #6096ba;
+    border-left: 2px solid #e7ecef;
 }
 
 .aside-menu > input {
@@ -84,6 +79,22 @@ aside {
 nav {
     display: flex;
     justify-content: space-between;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vw;
+    width: 6vw;
+    font-size: 2rem;
+    color: #8b8c89;
+    box-shadow: 1px 1px 4px #8b8c89;
+}
+
+.icon-box:hover {
+    color: #e7ecef;
+    background-color: #a3cef1;
 }
 
 .search-box {
@@ -126,7 +137,7 @@ header {
 }
 
 .title-box {
-    margin: 2vw 8vw;
+    margin: 4vw 8vw;
 }
 
 .title {
@@ -145,11 +156,13 @@ header {
     border-radius: 25px;
     border: 1px solid #8b8c89;
     font-size: 1.5rem;
+    cursor: default;
 }
 
 .open {
     font-size: 2.8rem;
     color: #76BA1B;
+    cursor: auto;
 }
 
 .round-icon {
@@ -163,8 +176,14 @@ header {
     border: 1px solid #8b8c89;
 }
 
+.round-icon:hover {
+    color: #e7ecef;
+    background-color: #a3cef1;
+}
+
 .preview {
     color: #6096ba;
+    cursor: pointer;
 }
 
 .tabs {
@@ -178,7 +197,14 @@ header {
 .tab {
     display: block;
     float: left;
-    margin: 3vmin;
+    margin: 0 1.5vw;
+    padding-bottom: 3vh
+}
+
+.tab:hover {
+    color: black;
+    font-weight: bolder;
+    border-bottom: 2px solid #6096ba;
 }
 
 /* GRAPHS */
@@ -224,10 +250,14 @@ header {
     padding: 0.5vw 1vw;
     border-radius: 25px;
     border: 1px solid #8b8c89;
-    color:  #8b8c89;
-    background-color: #e7ecef;
+    color: #e7ecef;
+    background-color: #274c77;
     margin-left: 10vw;
     margin-top: 0.5vw;
+}
+
+.graph-buttons:hover {
+    background-color: #6096ba;
 }
 
 .content {
@@ -256,7 +286,12 @@ header {
 
 .collapse-icon {
     margin: 5vw auto;
-    background-color: #e7ecef;
+    color: #e7ecef;
+    background-color: #274c77;
+}
+
+.collapse-icon:hover {
+    background-color: #6096ba;
 }
 
 hr {
@@ -268,7 +303,7 @@ hr {
 
 /* TABLE CONTENT */
 table {
-    margin: 2vw;
+    margin: 0 2vw;
     width: 60vw;
     height: 120vh;
     border-collapse: collapse;
@@ -276,43 +311,37 @@ table {
 
 .table-hr {
     -webkit-transform: rotate(90deg);
-    height: 50vw;
+    height: 53vw;
     width: 0.5px;
+    right: 54vw;
 }
 
 .table-hr-1 {
-    top: 87vh;
-    right: 52vw;
+    top: 88vh;
 }
 
 .table-hr-2 {
-    top: 98vh;
-    right: 52vw;
+    top: 100vh;
 }
 
 .table-hr-3 {
-    top: 110vh;
-    right: 52vw;
+    top: 112vh;
 }
 
 .table-hr-4 {
-    top: 121vh;
-    right: 52vw;
+    top: 123vh;
 }
 
 .table-hr-5 {
-    top: 133vh;
-    right: 52vw;
+    top: 135vh;
 }
 
 .table-hr-6 {
-    top: 153vh;
-    right: 52vw;
+    top: 158vh;
 }
 
 .table-hr-7 {
-    top: 170vh;
-    right: 52vw;
+    top: 173vh;
 }
 
 .table-header {
@@ -332,14 +361,18 @@ th {
     text-align: left;
     display: block;
     margin-left: 1vw;
-    background-color: #a3cef1;
+    background-color: #274c77;
     width: 4vw;
     padding: 0.8vw 1.3vw;
     border-radius: 3px;
 }
 
+.edit-icon:hover {
+    background-color: #a3cef1;
+}
+
 td {
-    padding-left: 2vw; 
+    padding: 0 2vw; 
 }
 
 .table-section {
@@ -362,17 +395,21 @@ td {
 }
 
 .article-links {
-    margin-top: 2vw;
+    margin-top: 0;
     width: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.link-title {
+    margin-top: 5vh;
+}
+
 .social-button {
-    width: 15vw;
-    height: 3vw;
-    margin-bottom: 1vh;
+    width: 18vw;
+    height: 7vh;
+    margin-bottom: 3vh;
     margin-right: auto;
     margin-left: auto;
     color: #e7ecef;
@@ -393,22 +430,31 @@ td {
 }
 
 .copy-button {
-    background-color: #6096ba;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #e7ecef;
+    background-color: #274c77;
     border: none;
     margin: 0;
-    padding: 0;
-    height: 5vh;
+    padding-right: 3vw;
+    height: 6.9vh;
     width: 3.2vw;
     margin-left: 2.2vw;
     border-radius: 0 3px 3px 0;
-    /* height: 3vh; */
+}
+
+.copy-button:hover {
+    background-color: #6096ba;
 }
 
 .link {
+    position: relative;
     background-color: #e7ecef;
     padding-left: 1.5vw;
-    width: 16vw;
-    height: 5vh;
+    padding-bottom: 0.1vh;
+    padding-top: 0.1vh;
+    width: 18vw;
     border-radius: 3px;
-    margin: 0;
+    margin: 2vh 0;
 }
