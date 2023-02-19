@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="/node_modules/@flaticon/flaticon-uicons/css/all/all.css" rel="stylesheet">
     <title>Static Comp 1</title>
 </head>
 <body>
@@ -38,24 +39,42 @@
     </aside>
     <main>
         <nav>
-            <button>Open Menu</button>
-            <input type="search" placeholder="Search for a job, task or resume" class="search-bar">
-            <button>Add Friend</button>
-            <button>Calendar</button>
-            <button>Apps</button>
+            <div class="icon-box">
+                <i class="fi fi-br-menu-burger"></i>
+            </div>
+            <div class="search-box">
+                <i class="fi fi-bs-search"></i>
+                <input type="search" placeholder="Search for a job, task or resume" class="search-input">
+            </div>
+            <div class="icon-box">
+                <i class="fi fi-ss-user-add"></i>
+            </div>
+            <div class="icon-box">
+                <i class="fi fi-ss-calendar-lines"></i>
+            </div>
+            <div class="icon-box">
+                <i class="fi fi-sr-apps"></i>
+            </div>
         </nav>
         <header>
             <div class="headline">
                 <div class="title">
-                    <h1>Energy Vampire Statistics</h1>
+                    <h1 style="color: black">Energy Vampire Statistics</h1>
                     <p>Staten Island, NY <span class="preview">+ Preview this post</span></p>
                 </div>
                 <div class="buttons-container">
-                    <button class="round-icon">Open</button>
-                    <button class="round-icon">Bookmark Icon</button>
-                    <button class="round-icon">Bookmark Icon</button>
-                    <button class="round-icon">Edit Icon</button>
-                    <button class="round-icon">Trashcan Icon</button>
+                    <div class="open-icon">
+                        <i class="fi fi-bs-bullet open"></i>Open
+                    </div>
+                    <div class="round-icon">
+                        <i class="fi fi-sr-bookmark"></i>
+                    </div>
+                    <div class="round-icon">
+                        <i class="fi fi-sr-pencil"></i>
+                    </div>
+                    <div class="round-icon">
+                        <i class="fi fi-ss-trash"></i>
+                    </div>
                 </div>
             </div>
             <menu class="tabs">
@@ -86,7 +105,7 @@
             <div class="article-and-links">
                 <table>
                     <tr class="table-header">
-                        <th><h2>Job Description</h2></th>
+                        <th class="first-column"><h2>Job Description</h2></th>
                         <th><button>Pencil Icon - Edit</button></th>
                     </tr>
                     <tr class="table-section">
@@ -115,31 +134,42 @@
                     </tr>
                     <tr class="table-section">
                        <td><h3>Hiring Lead</h3></td>
-                       <td><p><img class="headshot" src="assets/guillermo_headshot.png">Guillermo de lz Cruz</p></td>
+                       <td><p><img class="mini-headshot" src="assets/guillermo_headshot.png">Guillermo de la Cruz</p></td>
                     </tr>
                     <tr class="table-section">
                         <td><h3>Approved Salary</h3></td>
                         <td><p>$58,000</p></td>
                     </tr>
+                    <hr class="table-hr-1">
+                    <hr class="table-hr-2">
+                    <hr class="table-hr-3">
+                    <hr class="table-hr-4">
+                    <hr class="table-hr-5">
+                    <hr class="table-hr-6">
+                    <hr class="table-hr-7">
                 </table>
                 <section class="article-links">
-                    <button class="social-button">Icon - Post to Facebook</button><br>
-                    <button class="social-button">Icon - Tweet this Job</button><br>
-                    <button class="social-button">Icon - Post to Linkedin</button><br>
+                    <button class="social-button">Icon - Post to Facebook</button>
+                    <button class="social-button">Icon - Tweet this Job</button>
+                    <button class="social-button">Icon - Post to Linkedin</button>
                     <div>
                         <h4>Icon - Link to this Job</h4>
                         <p>A psychic vampire (or energy vampire) is a creature in folklore said to feed off the "life force" of other living creatures.</p>
-                        <p>www.somewebsite.com <button class="copy-button">Copy</button></p>
+                        <div class="link">
+                            <p>www.somewebsite.com<button class="copy-button">Copy</button></p>
+                        </div>
                     </div>
                     <div>
                         <h4>Icon - Use the Button Widget</h4>
                         <p>A psychic vampire (or energy vampire) is a creature in folklore said to feed off the "life force" of other living creatures.</p>
-                        <p>www.somewebsite.com <button class="copy-button">Copy</button></p>
+                        <div class="link">
+                            <p>www.somewebsite.com<button class="copy-button">Copy</button></p>
+                        </div>
                     </div>
                     <div>
                         <h4>Icon - Upload Resumes by Email</h4>
                         <p>A psychic vampire (or energy vampire) is a creature in folklore said to feed off the "life force" of other living creatures.</p>
-                        <p>whatwedointheshadows@fx.com</p>
+                        <p class="link">whatwedointheshadows@fx.com</p>
                     </div>
                 </section>
             </div>
